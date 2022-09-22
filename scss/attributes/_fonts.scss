@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'nunito-medium';
+    src: url('../../fonts/Nunito-Medium.woff2') format('woff2'),
+        url('../../fonts/Nunito-Medium.woff') format('woff'),
+        url('../../fonts/Nunito-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'nunito-bold';
+    src: url('../../fonts/Nunito-Bold.woff2') format('woff2'),
+        url('../../fonts/Nunito-Bold.woff') format('woff'),
+        url('../../fonts/Nunito-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira-regular';
+    src: url('../../fonts/FiraSans-Regular.woff2') format('woff2'),
+        url('../../fonts/FiraSans-Regular.woff') format('woff'),
+        url('../../fonts/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira-medium';
+    src: url('../../fonts/FiraSans-Medium.woff2') format('woff2'),
+        url('../../fonts/FiraSans-Medium.woff') format('woff'),
+        url('../../fonts/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../../fonts/HelveticaNeue-Italic.woff2') format('woff2'),
+        url('../../fonts/HelveticaNeue-Italic.woff') format('woff'),
+        url('../../fonts/HelveticaNeue-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
