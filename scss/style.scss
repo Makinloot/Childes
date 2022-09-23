@@ -3,11 +3,18 @@
 @import './attributes/reset';
 @import './attributes/utilities';
 
+
+main {
+    background-color: red;
+    grid-area: main;
+}
+
 // header styles
 .header {
+    grid-area: header;
+    padding: 1.2rem 1rem;
 
     &__wrapper {
-        padding: 1.2rem 0;
         justify-content: space-between;
     }
 
@@ -15,9 +22,11 @@
         font-family: $ff-nunitomedium;
         font-size: $fs-l;
         font-weight: 500;
+        color: $clr-darkgrey;
 
         span {
             font-family: $ff-nunitobold;
+            color: $clr-darkgrey;
         }
     }
 
@@ -35,5 +44,38 @@
                 margin-left: 1.18rem;
             }
         }
+    }
+}
+
+// aside styles
+.aside {
+    grid-area: aside;
+
+    &__wrapper {
+        padding: 1rem;
+    }
+
+    &__title {
+        justify-content: flex-start;
+        gap: .5rem;
+    }
+
+    h3 {
+        font-family: $ff-nunitobold;
+        text-transform: capitalize;
+        font-size: $fs-m;
+        color: $clr-darkgrey;
+        text-decoration: underline;
+
+        span {
+            font-family: $ff-nunitomedium;
+        }
+    }
+
+    li {
+        margin: 1rem 0 0 1rem;
+        font-family: $ff-firaregular;
+        font-size: $fs-s;
+        color: $clr-darkgrey;
     }
 }
