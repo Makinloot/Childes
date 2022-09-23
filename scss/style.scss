@@ -3,12 +3,6 @@
 @import './attributes/reset';
 @import './attributes/utilities';
 
-
-main {
-    background-color: red;
-    grid-area: main;
-}
-
 // header styles
 .header {
     grid-area: header;
@@ -43,6 +37,62 @@ main {
             &:nth-child(2) {
                 margin-left: 1.18rem;
             }
+        }
+    }
+}
+
+// main styles
+.main {
+    grid-area: main;
+
+    &__wrapper {
+        padding: 2rem 3rem;
+    }
+
+    h2 {
+        font-family: $ff-nunitobold;
+        font-size: $fs-xl;
+
+        span {
+            font-family: $ff-nunitomedium;
+            font-weight: 500;
+        }
+    }
+
+    &__goal,
+    &__instructions {
+        margin: 50px 0 150px;
+        font-family: $ff-firaregular;
+        
+        h3 {
+            font-size: $fs-l;
+        }
+        
+        p {
+            margin-top: 1.5rem;
+        }
+
+        hr {
+            opacity: 0;
+            margin: 1rem 0;
+        }
+    }
+
+    &__creators {
+        
+        h3 {
+            font-size: $fs-l;
+        }
+
+        ul {
+            margin-top: 1.5rem;
+        }
+
+        li {
+            list-style: none;
+            font-style: italic;
+            font-family: $ff-helvetica;
+            font-size: $fs-s;
         }
     }
 }
