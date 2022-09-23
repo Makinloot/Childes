@@ -95,6 +95,81 @@
             font-size: $fs-s;
         }
     }
+
+    .auth-para {
+        margin: 5rem auto;
+        max-width: 426px;
+        font-family: $ff-firaregular;
+        text-align: center;
+    }
+
+    &__form {
+        max-width: 380px;
+        margin: 5.6rem auto;
+        gap: 1.25rem;
+
+        &-field {
+            position: relative;
+            width: 100%;
+            align-items: flex-start;
+
+            &:nth-child(3) {
+                justify-content: space-between;
+            }
+
+            .flex-row {
+                gap: .5rem;
+
+                label {
+                    font-size: $fs-xs;
+                }
+            }
+
+            a {
+                font-size: $fs-xs;
+                text-decoration: underline;
+            }
+
+            .hide-password {
+                position: absolute;
+                top: 50%;
+                right: 1.25rem;
+                transform: translateY(-50%);
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        label {   
+            font-family: $ff-firaregular;
+            font-size: $fs-s;
+        }
+
+        input {
+            padding: 1rem;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+
+        input[type=checkbox] {
+            width: initial;
+        }
+
+        input[type=submit] {
+            background-color: $clr-darkblue;
+            margin-top: 2rem;
+            border-radius: 6px;
+            color: $clr-white;
+            font-size: $fs-s;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                scale: .9;
+            }
+        }
+    }
 }
 
 // aside styles
