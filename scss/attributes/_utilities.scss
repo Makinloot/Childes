@@ -3,6 +3,16 @@
     margin: 0 auto;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: 
+    "header header"
+    "aside main";
+    row-gap: 10px;
+    column-gap: 8px;
+}
+
 // flex classes
 %flex {
     display: flex;
@@ -29,13 +39,13 @@
         top: 100%;
         left: 50%;
         width: 0;
-        border: 0px solid;
+        border: 0px solid $clr-darkgrey;
         transition: .2s;
     }
 
     &:hover::after {
         left: 0;
         width: 100%;
-        border: 1px solid;
+        border: 1px solid $clr-darkgrey;
     }
 }
