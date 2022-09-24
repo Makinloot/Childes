@@ -7,6 +7,10 @@
     color: $clr-darkblue;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
