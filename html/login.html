@@ -36,9 +36,9 @@
                     </div>
                     <div class="main__form-field flex-column">
                         <label for="password">პაროლი:</label>
-                        <input type="password" id="password" placeholder="********" required>
-                        <button class="hide-password flex-row" type="button">
-                          <img src="../images/eye.png" alt="hide-password">
+                        <input type="password" id="password" placeholder="********" minlength="8" maxlength="16" required>
+                        <button class="hide-password flex-row" type="button" onclick="showPsw(psw, pswIcon)">
+                          <img src="../images/eye.png" alt="hide-password" id="show-psw-icon">
                         </button>
                     </div>
                     <div class="main__form-field flex-row">
@@ -67,5 +67,7 @@
         </aside>
       </div>
     </div>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
