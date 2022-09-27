@@ -7,6 +7,7 @@
 .header {
     grid-area: header;
     padding: 1.2rem 1rem;
+    background-color: $clr-thinblue;
 
     &__wrapper {
         position: relative;
@@ -48,6 +49,7 @@
 // main styles
 .main {
     grid-area: main;
+    background-color: $clr-greymain;
 
     &__wrapper {
         padding: 2rem 3rem;
@@ -226,6 +228,19 @@
             font-family: $ff-nunitomedium;
             font-weight: 400;
             border-bottom: 1px solid $clr-grey-secondary;
+
+            &:nth-child(2) {
+                
+            }
+
+            a {
+                color: #2A27CA;
+
+                &:hover {
+                    color: $clr-green;
+                    text-decoration: underline;
+                }
+            }
         }
 
         .parent-data {
@@ -270,6 +285,19 @@
     .audios-list {
         margin-top: 2rem;
         padding-left: 1rem;
+
+        .com {
+            display: inline-block;
+            margin: 1rem 0 0;
+            font-family: $ff-nunitomedium;
+            color: $clr-black;
+            font-weight: 400;
+
+            span {
+                font-family: $ff-nunitobold;
+                color: $clr-black;
+            }
+        }
         
         li {
             margin-top: 1.3rem;
@@ -297,6 +325,7 @@
 // aside styles
 .aside {
     grid-area: aside;
+    background-color: $clr-thinblue;
 
     &__wrapper {
         padding: 1rem;
@@ -384,12 +413,18 @@
             width: 20%;
             background-color: $clr-lightgrey;
             border-radius: 4px;
+            cursor: pointer;
 
             span {
                 position: absolute;
                 top: 105%;
                 left: 50%;
                 transform: translateX(-50%);
+
+                &.active {
+                    color: $clr-green;
+                    text-decoration: underline;
+                }
             }
         }
     }
