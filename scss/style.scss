@@ -16,7 +16,7 @@
         font-family: $ff-nunitomedium;
         font-size: $fs-l;
         font-weight: 500;
-        color: $clr-darkgrey;
+        color: $clr-grey-primary;
 
         span {
             font-family: $ff-nunitobold;
@@ -198,11 +198,12 @@
         %table-content {
             font-size: $fs-xs;
             text-transform: capitalize;
-            border-top: 1px solid;
-            border-right: 1px solid;
+            border-top: 1px solid $clr-grey-secondary;
+            border-right: 1px solid $clr-grey-secondary;
+            color: $clr-black;
 
             &:first-child {
-                border-left: 1px solid;
+                border-left: 1px solid $clr-grey-secondary;
             }
         }
         
@@ -216,8 +217,9 @@
             @extend %table-content;
             padding: .5rem;
             height: 100%;
-            font-family: $ff-firaregular;
-            border-bottom: 1px solid;
+            font-family: $ff-nunitomedium;
+            font-weight: 400;
+            border-bottom: 1px solid $clr-grey-secondary;
         }
 
         .parent-data {
@@ -240,11 +242,12 @@
             list-style: none;
             line-height: 1.25rem;
             font-family: $ff-nunitomedium;
-
+            font-weight: 400;
+            
             span {
                 font-family: $ff-nunitobold;
             }
-
+            
             &::before {
                 content: '';
                 position: absolute;
@@ -257,17 +260,17 @@
             }
         }
     }
-
+    
     .audios-list {
         margin-top: 2rem;
         padding-left: 1rem;
-
+        
         li {
             margin-top: 1.3rem;
             font-family: $ff-nunitomedium;
             font-weight: 400;
             color: $clr-black;
-
+            
             &:first-child {
                 margin-top: 0;
             }
@@ -333,6 +336,10 @@
             margin: .625rem 0 0 1rem;
             font-family: $ff-nunitobold;
             list-style: inside;
+            
+            a {
+                color: $clr-green;
+            }
         }
     }
 
