@@ -308,11 +308,17 @@
     }
 
     h3 {
-        font-family: $ff-nunitobold;
+        font-family: $ff-nunitomedium;
+        font-weight: 400;
         text-transform: capitalize;
         font-size: $fs-m;
         color: $clr-darkgrey;
-        text-decoration: underline;
+
+        &.active {
+            font-family: $ff-nunitobold;
+            text-decoration: underline;
+            font-weight: 700;
+        }
 
         span {
             font-family: $ff-nunitomedium;
@@ -340,11 +346,15 @@
 
         li {
             margin: .625rem 0 0 1rem;
-            font-family: $ff-nunitobold;
-            list-style: inside;
+            // font-family: $ff-nunitobold;
             
             a {
-                color: $clr-green;
+                font-family: $ff-nunitomedium;
+                color: $clr-grey-primary;
+
+                &:hover {
+                    font-family: $ff-nunitobold;
+                }
             }
         }
     }
