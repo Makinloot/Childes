@@ -6,7 +6,7 @@ window.onload = () => {
   const { width } = body.getBoundingClientRect();
   const modal = document.querySelector(".modal");
   
-  if (width <= 768) modal.classList.add("modal-active");
+  if (width <= 1200) modal.classList.add("modal-active");
 };
 
 // close modal function
