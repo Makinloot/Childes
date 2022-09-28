@@ -7,6 +7,7 @@
 .header {
     grid-area: header;
     padding: 1.2rem 1rem;
+    background-color: $clr-thinblue;
 
     &__wrapper {
         position: relative;
@@ -48,6 +49,7 @@
 // main styles
 .main {
     grid-area: main;
+    background-color: $clr-greymain;
 
     &__wrapper {
         padding: 2rem 3rem;
@@ -93,6 +95,7 @@
         }
 
         li {
+            margin: .3rem 0;
             list-style: none;
             font-style: italic;
             font-family: $ff-helvetica;
@@ -192,6 +195,7 @@
             font-family: $ff-nunitobold;
             font-size: $fs-s;
             text-transform: capitalize;
+            color: $clr-black;
         }
         
         tr {
@@ -226,6 +230,19 @@
             font-family: $ff-nunitomedium;
             font-weight: 400;
             border-bottom: 1px solid $clr-grey-secondary;
+
+            &:nth-child(2) {
+                
+            }
+
+            a {
+                color: #2A27CA;
+
+                &:hover {
+                    color: $clr-green;
+                    text-decoration: underline;
+                }
+            }
         }
 
         .parent-data {
@@ -270,6 +287,19 @@
     .audios-list {
         margin-top: 2rem;
         padding-left: 1rem;
+
+        .com {
+            display: inline-block;
+            margin: 1rem 0 0;
+            font-family: $ff-nunitomedium;
+            color: $clr-black;
+            font-weight: 400;
+
+            span {
+                font-family: $ff-nunitobold;
+                color: $clr-black;
+            }
+        }
         
         li {
             margin-top: 1.3rem;
@@ -297,6 +327,7 @@
 // aside styles
 .aside {
     grid-area: aside;
+    background-color: $clr-thinblue;
 
     &__wrapper {
         padding: 1rem;
@@ -305,23 +336,23 @@
     &__title {
         justify-content: flex-start;
         gap: .5rem;
-    }
-
-    h3 {
-        font-family: $ff-nunitomedium;
-        font-weight: 400;
-        text-transform: capitalize;
-        font-size: $fs-m;
-        color: $clr-darkgrey;
-
-        &.active {
-            font-family: $ff-nunitobold;
-            text-decoration: underline;
-            font-weight: 700;
-        }
-
-        span {
+    
+        a {
             font-family: $ff-nunitomedium;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-size: $fs-m;
+            color: $clr-grey-primary;
+    
+            &.active {
+                font-family: $ff-nunitobold;
+                text-decoration: underline;
+                font-weight: 700;
+            }
+    
+            span {
+                font-family: $ff-nunitomedium;
+            }
         }
     }
 
@@ -330,7 +361,7 @@
         font-family: $ff-firaregular;
         font-size: $fs-s;
         color: $clr-darkgrey;
-
+        
         img {
             width: 1rem;
             object-fit: contain;
@@ -345,15 +376,26 @@
     .logged-in-ul {
 
         li {
-            margin: .625rem 0 0 1rem;
-            // font-family: $ff-nunitobold;
+            margin: .725rem 0 0 1rem;
             
             a {
                 font-family: $ff-nunitomedium;
-                color: $clr-grey-primary;
+                color: $clr-green;
 
                 &:hover {
                     font-family: $ff-nunitobold;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .grey-li {
+
+            a {
+                color: $clr-darkgrey;
+
+                &:hover {
+                    text-decoration: none;
                 }
             }
         }
@@ -384,12 +426,22 @@
             width: 20%;
             background-color: $clr-lightgrey;
             border-radius: 4px;
+            cursor: pointer;
 
             span {
                 position: absolute;
                 top: 105%;
                 left: 50%;
                 transform: translateX(-50%);
+                font-family: $ff-nunitobold;
+                color: $clr-darkgrey;
+                font-size: .5rem;
+                white-space: nowrap;
+
+                &.active {
+                    color: $clr-green;
+                    text-decoration: underline;
+                }
             }
         }
     }
