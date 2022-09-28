@@ -51,8 +51,13 @@
     grid-area: main;
     background-color: $clr-greymain;
 
+    
     &__wrapper {
         padding: 2rem 3rem;
+    
+        &.logged-main {
+            padding: 0;
+        }
     }
 
     h2 {
@@ -200,7 +205,8 @@
         
         tr {
             display: grid;
-            grid-template-columns: repeat(10, 10%);
+            // grid-template-columns: repeat(10, 10%);
+            grid-template-columns: 1fr 136px repeat(8, 1fr);
             justify-content: center;
             align-items: center;
         }
@@ -286,7 +292,7 @@
     
     .audios-list {
         margin-top: 2rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
 
         .com {
             display: inline-block;
