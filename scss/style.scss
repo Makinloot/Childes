@@ -8,6 +8,7 @@
     grid-area: header;
     padding: 1.2rem 1rem;
     background-color: $clr-thinblue;
+    border-radius: 0 0 4px 4px;
 
     &__wrapper {
         position: relative;
@@ -50,6 +51,7 @@
 .main {
     grid-area: main;
     background-color: $clr-greymain;
+    border-radius: 4px;
 
     
     &__wrapper {
@@ -57,6 +59,13 @@
     
         &.logged-main {
             padding: 0;
+        }
+
+        .table-wrapper {
+            background-color: #fff;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 4px;
         }
     }
 
@@ -144,7 +153,7 @@
 
             .hide-password {
                 position: absolute;
-                top: 50%;
+                top: 70%;
                 right: 1.25rem;
                 transform: translateY(-50%);
                 background-color: transparent;
@@ -154,7 +163,8 @@
             }
         }
 
-        label {   
+        label {
+            margin: 0.5rem 0;   
             font-family: $ff-firaregular;
             font-size: $fs-s;
         }
@@ -164,6 +174,7 @@
             width: 100%;
             border: none;
             outline: none;
+            border-radius: 6px;
         }
 
         input[type=checkbox] {
@@ -196,7 +207,7 @@
     .participants__table {
         
         h3 {
-            margin: 1rem 0;
+            margin: .5rem 0;
             font-family: $ff-nunitobold;
             font-size: $fs-s;
             text-transform: capitalize;
@@ -205,7 +216,6 @@
         
         tr {
             display: grid;
-            // grid-template-columns: repeat(10, 10%);
             grid-template-columns: 1fr 136px repeat(8, 1fr);
             justify-content: center;
             align-items: center;
@@ -264,7 +274,7 @@
 
     .transcript {
         margin-top: 2rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
 
         li {
             position: relative;
@@ -334,6 +344,7 @@
 .aside {
     grid-area: aside;
     background-color: $clr-thinblue;
+    border-radius: 4px;
 
     &__wrapper {
         padding: 1rem;
@@ -355,7 +366,7 @@
                 text-decoration: underline;
                 font-weight: 700;
             }
-    
+
             span {
                 font-family: $ff-nunitomedium;
             }
@@ -367,6 +378,11 @@
         font-family: $ff-firaregular;
         font-size: $fs-s;
         color: $clr-darkgrey;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 700;
+        }
         
         img {
             width: 1rem;
