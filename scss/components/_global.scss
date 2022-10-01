@@ -29,15 +29,10 @@
 
     a {
       @extend %link;
-      // margin-left: 2.43rem;
       font-family: $ff-nunitomedium;
       font-size: $fs-s;
       color: $clr-darkgrey;
       text-transform: capitalize;
-
-      &:nth-child(2) {
-        // margin-left: 1.18rem;
-      }
     }
   }
 }
@@ -69,7 +64,7 @@
   grid-area: aside;
   background-color: $clr-thinblue;
   border-radius: 4px;
-
+  
   &__wrapper {
     padding: 1rem;
   }
@@ -116,31 +111,6 @@
       &:last-child {
         margin-left: 6px;
       }
-    }
-  }
-
-  // scrollbar styles
-  ::-webkit-scrollbar {
-    background-color: $clr-white;
-    border-radius: .5rem;
-
-    &-thumb {
-      background-color: #E1E1E1;
-      border-radius: .5rem;
-
-      &:hover {
-        background-color: $clr-lightgrey;
-      }
-    }
-
-    &-button:single-button:vertical:decrement {
-      background-position: center 4px;
-      background-image: url(../../images/scroll-btn-up.png);
-    }
-
-    &-button:single-button:vertical {
-      background-position: center 4px;
-      background-image: url(../../images/scroll-btn-down.png);
     }
   }
 }
