@@ -79,9 +79,34 @@
 
     .input-error {
       display: none;
+      margin-top: 1.8rem;
       color: $clr-red;
       font-size: $fs-s;
       font-family: $ff-firaregular;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    .input-success {
+      display: none;
+      margin-top: 1.8rem;
+      font-size: $fs-s;
+      text-align: center;
+
+      &.active {
+        display: block;
+      }
+
+      img {
+        width: 35px;
+      }
+
+      p {
+        margin: 1rem 0;
+        color: $clr-lightgreen;
+      }
     }
   }
 }

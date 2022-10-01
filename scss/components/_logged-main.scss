@@ -137,10 +137,19 @@
 // aside styles
 .aside {
   .logged-in-ul {
-    overflow: visible;
+    position: relative;
+    &.video-list {
+      min-height: 400px;
+      overflow: hidden;
+      overflow-y: visible;
+
+      .list-wrapper {
+        position: absolute;
+      }
+    }
     
     li {
-      margin: 0.725rem 0 0 1rem;
+      margin: 1rem 0 0 1rem;
 
       a {
         font-family: $ff-nunitomedium;

@@ -31,20 +31,22 @@
               პაროლის აღსადგენად გთხოვთ, მიუთითოთ თქვენი რეგისტრირებული
               ელ-ფოსტა, სადაც მიიღებთ განახლებულ პაროლს.
             </p>
-            <form action="#" class="main__form flex-column" autocomplete="off">
+            <form action="#" class="main__form flex-column" id="reset-psw" autocomplete="off" novalidate>
               <div class="main__form-field flex-column">
                 <label for="email">ელ-ფოსტა:</label>
                 <input
                   type="email"
-                  id="email"
+                  id="psw-reset-email"
                   placeholder="example@email.ge"
                   required
                 />
               </div>
               <input type="submit" value="პაროლის აღდგენა" />
-              <span class="input-error"
-                >** ელ-ფოსტა არასწორია, გთხოვთ მიუთითოთ სწორი მისამართი.</span
-              >
+              <span class="input-error" id="reset-psw-error">** ელ-ფოსტა არასწორია, გთხოვთ მიუთითოთ სწორი მისამართი.</span>
+              <span class="input-success" id="reset-psw-success">
+                <img src="../images/success.png" alt="success">
+                <p>შეტყობინება გაიგზავნა წარმატებით, ახალ პაროლს მიიღებთ თქვენს ელ-ფოსტაზე.</p>
+              </span>
             </form>
           </div>
         </main>
@@ -64,5 +66,6 @@
     </div>
 
     <script src="../js/script.js"></script>
+    <script src="../js/reset-psw.js"></script>
   </body>
 </html>

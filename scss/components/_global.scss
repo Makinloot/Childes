@@ -118,4 +118,29 @@
       }
     }
   }
+
+  // scrollbar styles
+  ::-webkit-scrollbar {
+    background-color: $clr-white;
+    border-radius: .5rem;
+
+    &-thumb {
+      background-color: #E1E1E1;
+      border-radius: .5rem;
+
+      &:hover {
+        background-color: $clr-lightgrey;
+      }
+    }
+
+    &-button:single-button:vertical:decrement {
+      background-position: center 4px;
+      background-image: url(../../images/scroll-btn-up.png);
+    }
+
+    &-button:single-button:vertical {
+      background-position: center 4px;
+      background-image: url(../../images/scroll-btn-down.png);
+    }
+  }
 }
