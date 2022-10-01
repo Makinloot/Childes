@@ -96,7 +96,11 @@
 
   .audios-list {
     margin-top: 2rem;
-    padding-left: 2rem;
+    padding-left: 2.5rem;
+
+    ol {
+      list-style-type: none;
+    }
 
     .com {
       display: inline-block;
@@ -112,13 +116,27 @@
     }
 
     li {
+      position: relative;
       margin-top: 1.3rem;
       font-family: $ff-nunitomedium;
       font-weight: 400;
       color: $clr-black;
+      // background-color: red;
 
       &:first-child {
         margin-top: 0;
+      }
+
+      .list-number {
+        padding: 3px 4px;
+        position: absolute;
+        left: -1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $clr-white;
+        font-size: $fs-m;
+        color: $clr-black;
+        border-radius: 6px;
       }
 
       img {
@@ -138,6 +156,7 @@
 .aside {
   .logged-in-ul {
     position: relative;
+    border-radius: 6px;
     &.video-list {
       min-height: 400px;
       overflow: hidden;
@@ -147,7 +166,7 @@
         position: absolute;
       }
     }
-    
+
     li {
       margin: 1rem 0 0 1rem;
 
@@ -173,8 +192,16 @@
     }
   }
 
+  &__wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: .5rem;
+  }
+
   &__video {
     margin-top: 2.5rem;
+    padding: 1rem;
+    border-radius: 6px;
 
     &-main {
       width: 100%;
@@ -214,6 +241,31 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  // scrollbar styles
+  ::-webkit-scrollbar {
+    background-color: $clr-white;
+    border-radius: 0.5rem;
+
+    &-thumb {
+      background-color: #e1e1e1;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: $clr-lightgrey;
+      }
+    }
+
+    &-button:single-button:vertical:decrement {
+      background-position: center 4px;
+      background-image: url(../../images/scroll-btn-up.png);
+    }
+
+    &-button:single-button:vertical {
+      background-position: center 4px;
+      background-image: url(../../images/scroll-btn-down.png);
     }
   }
 }
