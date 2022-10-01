@@ -46,7 +46,7 @@
       border-bottom: 1px solid $clr-grey-secondary;
 
       a {
-        color: $clr-green;
+        color: #2a27ca;
 
         &:hover {
           color: $clr-green;
@@ -194,13 +194,11 @@
 
   &__wrapper {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     gap: .5rem;
   }
 
   &__video {
     margin-top: 2.5rem;
-    padding: 1rem;
     border-radius: 6px;
 
     &-main {
