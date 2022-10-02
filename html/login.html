@@ -66,7 +66,22 @@
         </aside>
       </div>
     </div>
+    <dialog class="modal flex-column">
+      <div class="modal__icons">
+        <div class="modal__info">
+          <img src="./images/modal-info.png" alt="info">
+        </div>
+        <div class="modal__close" onclick="closeModal(modal)">
+          <img src="./images/x-circle.png" alt="close">
+        </div>
+      </div>
+      <p>ძვირფასო მომხმარებელო,<br>
+         ვებსაიტის გამოყენება რეკომენდებულია კომპიუტერიდან.
+      </p>
+      <button onclick="closeModal(modal)">გასაგებია</button>
+  </dialog>
 
     <script src="../js/script.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
