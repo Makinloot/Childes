@@ -15,10 +15,9 @@
               <div class="header__wrapper flex-row">
                 <h1><span>TalkBank:</span> CHILDES</h1>
                 <ul class="flex-row">
-                  <img src="../images/home.png" alt="home" />
                   <a href="../index.html">homepage</a>
-                  <a href="#">about</a>
-                  <a href="#">instruction</a>
+                  <a href="../#goal-section">about</a>
+                  <a href="../#instructions-section">instruction</a>
                 </ul>
                 <a href="./login.html" class="user-img">
                   <img src="../images/user.png" alt="user" />
@@ -27,64 +26,66 @@
             </header>
             <!-- main -->
             <main class="main">
-                <div class="main__wrapper">
-                    <div class="transcript__table">
-                        <h3>transcript:</h3>
-                        <table>
-                            <tr>
-                                <th class="flex-row">chat</th>
-                                <th class="flex-row">path</th>
-                                <th class="flex-row">filename</th>
-                                <th class="flex-row">languages</th>
-                                <th class="flex-row">media</th>
-                                <th class="flex-row">date</th>
-                                <th class="flex-row">pid</th>
-                                <th class="flex-row">design type</th>
-                                <th class="flex-row">activity</th>
-                                <th class="flex-row">group type</th>
-                            </tr>
-                            <tr>
-                                <td class="flex-row"><a href="#">020510</a></td>
-                                <td class="flex-row">Childes >> ქართული >> ALE >> 020510</td>
-                                <td class="flex-row">020510</td>
-                                <td class="flex-row">ქართული</td>
-                                <td class="flex-row">video</td>
-                                <td class="flex-row">video</td>
-                                <td class="flex-row">27.09.1999</td>
-                                <td class="flex-row">long</td>
-                                <td class="flex-row">toyplay</td>
-                                <td class="flex-row">biling</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="participants__table">
-                        <h3>participants:</h3>
-                        <table>
-                            <tr>
-                                <th class="flex-row">participants</th>
-                                <th class="flex-row">role</th>
-                                <th class="flex-row">name</th>
-                                <th class="flex-row">language</th>
-                                <th class="flex-row">age</th>
-                                <th class="flex-row">sex</th>
-                            </tr>
-                            <tr>
-                                <td class="flex-row">GAB</td>
-                                <td class="flex-row">target-child</td>
-                                <td class="flex-row">annick</td>
-                                <td class="flex-row">KA</td>
-                                <td class="flex-row">2:05.10</td>
-                                <td class="flex-row">-</td>
-                            </tr>
-                            <tr>
-                                <td class="flex-row parent-data">ALE</td>
-                                <td class="flex-row parent-data">father</td>
-                                <td class="flex-row parent-data">jerome</td>
-                                <td class="flex-row parent-data">KA</td>
-                                <td class="flex-row parent-data">-</td>
-                                <td class="flex-row parent-data">-</td>
-                            </tr>
-                        </table>
+                <div class="main__wrapper logged-main">
+                    <div class="table-wrapper">
+                      <div class="transcript__table">
+                          <h3>transcript:</h3>
+                          <table>
+                              <tr>
+                                  <th class="flex-row">chat</th>
+                                  <th class="flex-row">path</th>
+                                  <th class="flex-row">filename</th>
+                                  <th class="flex-row">languages</th>
+                                  <th class="flex-row">media</th>
+                                  <th class="flex-row">date</th>
+                                  <th class="flex-row">pid</th>
+                                  <th class="flex-row">design type</th>
+                                  <th class="flex-row">activity</th>
+                                  <th class="flex-row">group type</th>
+                              </tr>
+                              <tr>
+                                  <td class="flex-row"><a class="chat" href="#">020510</a></td>
+                                  <td class="flex-row">Childes >> ქართული >> ALE >> 020510</td>
+                                  <td class="flex-row">020510</td>
+                                  <td class="flex-row">ქართული</td>
+                                  <td class="flex-row">video</td>
+                                  <td class="flex-row">video</td>
+                                  <td class="flex-row">27.09.1999</td>
+                                  <td class="flex-row">long</td>
+                                  <td class="flex-row">toyplay</td>
+                                  <td class="flex-row">biling</td>
+                              </tr>
+                          </table>
+                      </div>
+                      <div class="participants__table">
+                          <h3>participants:</h3>
+                          <table>
+                              <tr>
+                                  <th class="flex-row">participants</th>
+                                  <th class="flex-row">role</th>
+                                  <th class="flex-row">name</th>
+                                  <th class="flex-row">language</th>
+                                  <th class="flex-row">age</th>
+                                  <th class="flex-row">sex</th>
+                              </tr>
+                              <tr>
+                                  <td class="flex-row">GAB</td>
+                                  <td class="flex-row">target-child</td>
+                                  <td class="flex-row">annick</td>
+                                  <td class="flex-row">KA</td>
+                                  <td class="flex-row">2:05.10</td>
+                                  <td class="flex-row">-</td>
+                              </tr>
+                              <tr>
+                                  <td class="flex-row parent-data">ALE</td>
+                                  <td class="flex-row parent-data">father</td>
+                                  <td class="flex-row parent-data">jerome</td>
+                                  <td class="flex-row parent-data">KA</td>
+                                  <td class="flex-row parent-data">-</td>
+                                  <td class="flex-row parent-data">-</td>
+                              </tr>
+                          </table>
+                      </div>
                     </div>
                     <div class="transcript">
                         <ul>
@@ -107,13 +108,14 @@
                     </div>
                     <div class="audios-list">
                         <ol>
-                            <li><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
-                            <li><span>GAB:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
-                            <li><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
-                            <li><span>GAB:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
-                            <li><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
-                            <li><span>GAB:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
-                            <li><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
+                            <li><span class="list-number">1</span><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
+                            <li><span class="list-number">2</span><span>GAB:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
+                            <li><span class="list-number">3</span><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
+                            <li><span class="list-number">4</span><span>GAB:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
+                            <li><span class="list-number">5</span><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
+                            <span class="com"><span>COM:</span> Playing with toys</span>
+                            <li><span class="list-number">6</span><span>GAB:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
+                            <li><span class="list-number">7</span><span>ALE:</span> Playing with toys <img src="../images/play.png" alt="play-btn"></li>
                         </ol>
                     </div>
                 </div>
@@ -121,97 +123,142 @@
             <!-- aside -->
             <aside class="aside">
               <div class="aside__wrapper">
-                <div class="aside__title flex-row">
-                  <h3 style="text-decoration: none;">childes</h3>
-                  <span>>></span>
-                  <h3>ქართული</h3>
-                  <span>>></span>
+                <div>
+                  <div class="aside__title flex-row">
+                    <a href="../index.html">childes</a>
+                    <span>>></span>
+                    <a href="./logged-in.html">ქართული</a>
+                    <span>>></span>
+                    <a href="#" class="active">ALE</a>
+                  </div>
+                  <ul class="logged-in-ul video-list">
+                    <div class="list-wrapper">
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                      <li>
+                        <a href="#">020510</a>
+                        <a href="#"><img src="../images/text.png" alt="document-icon"></a>
+                        <a href="#"><img src="../images/video.png" alt="video-icon"></a>
+                      </li>
+                    </div>
+                  </ul>
                 </div>
-                <ul class="logged-in-ul">
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                  <li>
-                    <a href="#">020510</a>
-                    <a href="#"><img src="../images/text.png" alt="document-icon"></a>
-                    <a href="#"><img src="../images/video.png" alt="video-icon"></a>
-                  </li>
-                </ul>
                 <div class="aside__video">
                     <div class="aside__video-main"></div>
                     <div class="aside__thumbnail-videos">
                         <ul class="flex-row">
                             <li>
-                                <span>020510</span>
+                                <a href="#" class="active">Video: 020510</a>
                             </li>
                             <li>
-                                <span>020510</span>
+                                <a href="#">Video: 020510</a>
                             </li>
                             <li>
-                                <span>020510</span>
+                                <a href="#">Video: 020510</a>
                             </li>
                             <li>
-                                <span>020510</span>
+                                <a href="#">Video: 020510</a>
                             </li>
                             <li>
-                                <span>020510</span>
+                                <a href="#">Video: 020510</a>
                             </li>
                         </ul>
                     </div>
@@ -220,7 +267,22 @@
             </aside>
         </div>
     </div>
+    <dialog class="modal flex-column">
+      <div class="modal__icons">
+        <div class="modal__info">
+          <img src="./images/modal-info.png" alt="info">
+        </div>
+        <div class="modal__close" onclick="closeModal(modal)">
+          <img src="./images/x-circle.png" alt="close">
+        </div>
+      </div>
+      <p>ძვირფასო მომხმარებელო,<br>
+         ვებსაიტის გამოყენება რეკომენდებულია კომპიუტერიდან.
+      </p>
+      <button onclick="closeModal(modal)">გასაგებია</button>
+  </dialog>
 
     <script src="../js/script.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 .container {
-  width: min(100% - 1rem, 1300px);
+  // width: min(100% - 1rem, 1300px);
+  width: min(1300px, 1300px);
   margin: 0 auto;
 }
 
@@ -19,12 +20,12 @@
 
 .wrapper-logged {
   @extend %wrapper;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 18% 81%;
 }
 
 .wrapper-logged-main {
   @extend %wrapper;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 28% 72%;
 }
 
 // flex classes
@@ -50,7 +51,7 @@
   &:after {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 50%;
     width: 0;
     border: 0px solid $clr-darkgrey;
